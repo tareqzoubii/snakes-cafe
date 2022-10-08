@@ -3,36 +3,36 @@ from operator import truediv
 
 if __name__ == "__main__":
     the_menu="""
-        Welcome to the Snakes Cafe!
-        Please see our menu below.
-        To quit at any time, type "quit"
-            ----------
-            Appetizers
-            ----------
-            Wings
-            Cookies
-            Spring Rolls
-            -----------
-            Entrees
-            -----------
-            Salmon
-            Steak
-            Meat Tornado
-            A Literal Garden
-            ------------
-            Desserts
-            ------------
-            Ice Cream
-            Cake
-            Pie
-            -----------
-            Beverages
-            -----------
-            Coffee
-            Tea
-            Unicorn Tears
-            --------------------
-        What would you like to order?
+    **************************************
+    **    Welcome to the Snakes Cafe!   **
+    **    Please see our menu below.    **
+    **                                  **
+    ** To quit at any time, type "quit" **
+    **************************************
+    Appetizers
+    ----------
+    Wings
+    Cookies
+    Spring Rolls
+    Entrees
+    -------
+    Salmon
+    Steak
+    Meat Tornado
+    A Literal Garden
+    Desserts
+    --------
+    Ice Cream
+    Cake
+    Pie
+    Drinks
+    ------
+    Coffee
+    Tea
+    Unicorn Tears
+    ***********************************
+    ** What would you like to order? **
+    ***********************************
     """
     print(the_menu)
     
@@ -46,9 +46,9 @@ while True :
     if order in menu:
         menu[order] += 1
         if menu[order] == 1:
-             print(f"{menu[order]} order of {order}added for you")
+             print(f"{menu[order]} order of {order} added for you")
         else:
-            print(f"{menu[order]} of {order}added for you")
+            print(f"{menu[order]} of {order} added for you")
     else:
          print(f"{order} is not in the menu")
 
